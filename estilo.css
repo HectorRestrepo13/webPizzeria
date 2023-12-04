@@ -5,6 +5,14 @@
   flex-direction: row;
   flex-wrap: wrap;
 }
+/* .moverTodo {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: 0.7s;
+} */
 .headeCol {
   display: flex;
   justify-content: space-between;
