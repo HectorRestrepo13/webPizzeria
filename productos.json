@@ -1,0 +1,68 @@
+{
+  "pizza": [
+    {
+      "nombre": "Hawaiian Chick",
+      "descripcion": "Queso Mozarella, trocitos de pollo, piña, tocineta y salsa B.B.Q.",
+      "imagen": "./imagenes/pizza1.jpeg"
+    },
+    {
+      "nombre": "3 Estaciones",
+      "descripcion": "Nuestra versión especial de pollo y champiñones con chorizo",
+      "imagen": "./imagenes/pizza1.jpeg"
+    },
+    {
+      "nombre": "Americana",
+      "descripcion": "Maíz tierno y tocineta con un toque picantico de pepperoni",
+      "imagen": "./imagenes/pizza1.jpeg"
+    },
+    {
+      "nombre": "Ranchera",
+      "descripcion": "Una pizza al mejor estilo ranchero: chorizo, tocineta y cebolla acompañado de nuestra salsa BBQ",
+      "imagen": "./imagenes/pizza1.jpeg"
+    }
+  ],
+  "refrescos": [
+    {
+      "nombre": "Batido Chocolate",
+      "descripcion": "Delicioso batido chocolate con crema",
+      "imagen": "./imagenes/BATIDO-CHOCO-OMAR.png"
+    },
+    {
+      "nombre": "Batido Fresa",
+      "descripcion": "Delicioso batido de fresa con crema y fruta de fresa",
+      "imagen": "./imagenes/batidoFresa.png"
+    },
+    {
+      "nombre": "Batido de Coco",
+      "descripcion": "Delicioso batido de Coco con crema y coco rallado",
+      "imagen": "./imagenes/batidoCoco.png"
+    },
+    {
+      "nombre": "Batido de Fruitfrut",
+      "descripcion": "Delicioso batido de Frustas con crema y frutas picadas",
+      "imagen": "./imagenes/batidoFruti.png"
+    }
+  ],
+  "postres": [
+    {
+      "nombre": "Postre chocolate",
+      "descripcion": "Delicioso postre de chocolate relleno de crema",
+      "imagen": "./imagenes/postreChocolate.jpeg"
+    },
+    {
+      "nombre": "Postre de Crema",
+      "descripcion": "Delicioso postre de crema relleno de chocolate",
+      "imagen": "./imagenes/postreCrema.jpg"
+    },
+    {
+      "nombre": "Postre de Frutas",
+      "descripcion": "Delicioso postre de Frutas relleno de chocolate y fruta picada",
+      "imagen": "./imagenes/postreFrutas.jpeg"
+    },
+    {
+      "nombre": "Postre de Milo",
+      "descripcion": "Delicioso postre de Milo relleno de chocolate y polvito de milo",
+      "imagen": "./imagenes/postreMilo.jpg"
+    }
+  ]
+}

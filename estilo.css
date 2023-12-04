@@ -1,0 +1,208 @@
+.headee {
+  display: flex;
+  justify-content: center;
+  background-color: #006491;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.headeCol {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.barraOpciones {
+  display: flex;
+  width: auto;
+}
+.barraOpciones button {
+  background-color: #006491;
+  border: none;
+  color: white;
+  font-size: 17px;
+  font-weight: bold;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.barraOpciones a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+.logoPizza {
+  width: 80px;
+}
+.btnIniciarSecion button {
+  background-color: #006491;
+  background-color: #006491;
+  border: none;
+  color: white;
+  font-size: 17px;
+  font-weight: bold;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.numero {
+  background-color: red;
+  border-radius: 40%;
+  width: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: white;
+  font-size: 20px;
+  width: 25px;
+  height: 25px;
+  overflow: hidden;
+}
+.numero p {
+  margin: 0px;
+}
+.acomodarIzquierda {
+  display: flex;
+  flex-direction: row;
+}
+.acomodarDerecha {
+  display: flex;
+  flex-direction: row;
+}
+.headerSecundario {
+  display: flex;
+  padding-left: 350px;
+  background-color: #f5f6f6;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+}
+.headerSecundario button {
+  background-color: #f5f6f6;
+  border: none;
+  color: #006491;
+  font-weight: bold;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.tempiezaTuPedido {
+  display: flex;
+  border-radius: 10px;
+  background-color: rgb(0, 120, 174);
+  margin-top: 25px;
+  justify-content: space-between;
+  padding-top: 10px;
+  padding-bottom: 3px;
+}
+.textoPedido {
+  display: flex;
+  width: 40%;
+  font-size: 80px;
+}
+
+.btnRecogerTienda {
+  display: flex;
+  margin-right: 30px;
+}
+.botones {
+  display: flex;
+  justify-content: center;
+}
+.botones button {
+  background-color: rgb(214, 32, 32);
+  color: white;
+  font-weight: bold;
+  font-size: 17px;
+  height: 40px;
+  border-radius: 5px;
+}
+.textoP {
+  margin-left: 10px;
+  margin-right: 10px;
+  display: flex;
+  color: white;
+  font-weight: bold;
+  align-items: end;
+}
+
+.derechaBotones {
+  display: flex;
+  align-items: center;
+}
+.IzquierdaBotones {
+  margin-left: 10%;
+}
+.IzquierdaBotones h1 {
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+}
+.textoP2 p {
+  color: #006491;
+  font-size: 15px;
+  font-weight: bold;
+}
+.btnImprimir {
+  height: 40px;
+  display: flex;
+  justify-content: right;
+  margin-left: auto;
+  padding-right: 0px;
+}
+.btnImprimir button {
+  background-color: #006491;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 3px;
+  height: 100%;
+  width: 70%;
+  font-size: 20px;
+}
+.btnImprimir2 {
+  width: 100%;
+  justify-content: right;
+  display: flex;
+}
+.cartelDescrip {
+  background-color: #006491;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+.textoP3 p {
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 0px;
+  margin: 0px;
+}
+.textoP3 {
+  display: flex;
+  align-items: center;
+}
+.ColCartel2 {
+  margin-left: auto;
+}
+.textoP32 {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+.textoP32 p {
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 0px;
+  margin: 0px;
+}
+.btnAnuncio {
+  width: 100%;
+  background-color: #e31837;
+}
+.tituloAnuncio {
+  color: #006491;
+  font-size: 17px;
+  margin-bottom: 0px;
+  margin-top: 5px;
+}
+.textoAnuncio {
+  font-size: 12px;
+  font-style: normal;
+  font-family: Arial, Helvetica, sans-serif;
+}
