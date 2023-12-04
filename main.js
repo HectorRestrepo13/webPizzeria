@@ -2,7 +2,7 @@ let rowPostres = document.getElementById("rowPostres");
 let rowBebidas = document.getElementById("rowBebidas");
 let rowPizzas = "";
 let colPostres = "";
-
+let btnPideYA = document.getElementById("btnPideYA");
 let rowPiza = document.getElementById("rowPiza");
 let contianerAnuncio = document.getElementById("contianerAnuncio");
 
@@ -59,14 +59,24 @@ fetch("productos.json")
     return datos.json();
   })
   .then((datos) => {
-    datos.pizza.forEach((element) => {
+    datos.pizza.forEach((element, index) => {
       let descrit = ` <div class="col-3">
      <div class="card" style="width: 100%;">
-       <img src="${element.imagen}" class="card-img-top" alt="${element.imagen}">
+       <img id="ImagenPizza" src="${
+         element.imagen
+       }" class="card-img-top" alt="${element.imagen}">
        <div class="card-body">
-         <a  href="#" class="btn btn-primary btnAnuncio">PIDE YA</a>
-         <h5 class="card-title tituloAnuncio">${element.nombre}</h5>
-         <p style="height: 65px;" class="card-text textoAnuncio">${element.descripcion}</p>
+         <a onclick="FuncionEnviar('pizza','${element.nombre}','${
+        element.imagen
+      }',${
+        index + 1
+      })" id="btnPideYA"  href="#" class="btn btn-primary btnAnuncio">PIDE YA</a>
+         <h5  id="NombrePizza" class="card-title tituloAnuncio">${
+           element.nombre
+         }</h5>
+         <p style="height: 65px;" class="card-text textoAnuncio">${
+           element.descripcion
+         }</p>
         
        </div>
      </div>
@@ -77,10 +87,10 @@ fetch("productos.json")
     datos.postres.forEach((element) => {
       let descrit = ` <div class="col-3">
        <div class="card" style="width: 100%;">
-         <img src="${element.imagen}" class="card-img-top" alt="${element.imagen}">
+         <img id="ImagenPostre" src="${element.imagen}" class="card-img-top" alt="${element.imagen}">
          <div class="card-body">
-           <a  href="#" class="btn btn-primary btnAnuncio">PIDE YA</a>
-           <h5 class="card-title tituloAnuncio">${element.nombre}</h5>
+           <a id="btnPideYA" href="#" class="btn btn-primary btnAnuncio">PIDE YA</a>
+           <h5 id="NombrePostres" class="card-title tituloAnuncio">${element.nombre}</h5>
            <p style="height: 65px;" class="card-text textoAnuncio">${element.descripcion}</p>
           
          </div>
@@ -100,10 +110,10 @@ fetch("productos.json")
     datos.refrescos.forEach((element) => {
       let descrit = ` <div class="col-3">
        <div class="card" style="width: 100%;">
-         <img src="${element.imagen}" class="card-img-top" alt="${element.imagen}">
+         <img id="ImagenRefresco" src="${element.imagen}" class="card-img-top" alt="${element.imagen}">
          <div class="card-body">
-           <a  href="#" class="btn btn-primary btnAnuncio">PIDE YA</a>
-           <h5 class="card-title tituloAnuncio">${element.nombre}</h5>
+           <a id="btnPideYA"  href="#" class="btn btn-primary btnAnuncio">PIDE YA</a>
+           <h5 id="NombreRefresco" class="card-title tituloAnuncio">${element.nombre}</h5>
            <p style="height: 65px;" class="card-text textoAnuncio">${element.descripcion}</p>
           
          </div>
@@ -135,10 +145,10 @@ soloPizza.addEventListener("click", () => {
       datos.pizza.forEach((element) => {
         let descrit = ` <div class="col-3">
            <div class="card" style="width: 100%;">
-             <img src="${element.imagen}" class="card-img-top" alt="${element.imagen}">
+             <img id="ImagenPizza" src="${element.imagen}" class="card-img-top" alt="${element.imagen}">
              <div class="card-body">
-               <a  href="#" class="btn btn-primary btnAnuncio">PIDE YA</a>
-               <h5 class="card-title tituloAnuncio">${element.nombre}</h5>
+               <a id="btnPideYA" href="#" class="btn btn-primary btnAnuncio">PIDE YA</a>
+               <h5 id="NombrePizza" class="card-title tituloAnuncio">${element.nombre}</h5>
                <p style="height: 65px;" class="card-text textoAnuncio">${element.descripcion}</p>
               
              </div>
@@ -171,10 +181,10 @@ soloRefrescos.addEventListener("click", () => {
       datos.refrescos.forEach((element) => {
         let descrit = ` <div class="col-3">
              <div class="card" style="width: 100%;">
-               <img src="${element.imagen}" class="card-img-top" alt="${element.imagen}">
+               <img id="ImagenRefresco" src="${element.imagen}" class="card-img-top" alt="${element.imagen}">
                <div class="card-body">
-                 <a  href="#" class="btn btn-primary btnAnuncio">PIDE YA</a>
-                 <h5 class="card-title tituloAnuncio">${element.nombre}</h5>
+                 <a id="btnPideYA" href="#" class="btn btn-primary btnAnuncio">PIDE YA</a>
+                 <h5 id="NombreRefresco" class="card-title tituloAnuncio">${element.nombre}</h5>
                  <p style="height: 65px;" class="card-text textoAnuncio">${element.descripcion}</p>
                 
                </div>
@@ -207,10 +217,10 @@ soloPostres.addEventListener("click", () => {
       datos.postres.forEach((element) => {
         let descrit = ` <div class="col-3">
                <div class="card" style="width: 100%;">
-                 <img src="${element.imagen}" class="card-img-top" alt="${element.imagen}">
+                 <img id="ImagenPostre" src="${element.imagen}" class="card-img-top" alt="${element.imagen}">
                  <div class="card-body">
-                   <a  href="#" class="btn btn-primary btnAnuncio">PIDE YA</a>
-                   <h5 class="card-title tituloAnuncio">${element.nombre}</h5>
+                   <a id="btnPideYA" href="#" class="btn btn-primary btnAnuncio">PIDE YA</a>
+                   <h5 id="NombrePostres" class="card-title tituloAnuncio">${element.nombre}</h5>
                    <p style="height: 65px;" class="card-text textoAnuncio">${element.descripcion}</p>
                   
                  </div>
@@ -251,7 +261,7 @@ verTodo.addEventListener("click", () => {
              <div class="card" style="width: 100%;">
                <img src="${element.imagen}" class="card-img-top" alt="${element.imagen}">
                <div class="card-body">
-                 <a  href="#" class="btn btn-primary btnAnuncio">PIDE YA</a>
+                 <a id="btnPideYA" href="#" class="btn btn-primary btnAnuncio">PIDE YA</a>
                  <h5 class="card-title tituloAnuncio">${element.nombre}</h5>
                  <p style="height: 65px;" class="card-text textoAnuncio">${element.descripcion}</p>
                 
@@ -266,7 +276,7 @@ verTodo.addEventListener("click", () => {
                <div class="card" style="width: 100%;">
                  <img src="${element.imagen}" class="card-img-top" alt="${element.imagen}">
                  <div class="card-body">
-                   <a  href="#" class="btn btn-primary btnAnuncio">PIDE YA</a>
+                   <a id="btnPideYA"  href="#" class="btn btn-primary btnAnuncio">PIDE YA</a>
                    <h5 class="card-title tituloAnuncio">${element.nombre}</h5>
                    <p style="height: 65px;" class="card-text textoAnuncio">${element.descripcion}</p>
                   
@@ -289,7 +299,7 @@ verTodo.addEventListener("click", () => {
                <div class="card" style="width: 100%;">
                  <img src="${element.imagen}" class="card-img-top" alt="${element.imagen}">
                  <div class="card-body">
-                   <a  href="#" class="btn btn-primary btnAnuncio">PIDE YA</a>
+                   <a id="btnPideYA" href="#" class="btn btn-primary btnAnuncio">PIDE YA</a>
                    <h5 class="card-title tituloAnuncio">${element.nombre}</h5>
                    <p style="height: 65px;" class="card-text textoAnuncio">${element.descripcion}</p>
                   
@@ -300,3 +310,65 @@ verTodo.addEventListener("click", () => {
       });
     });
 });
+
+let datosLocalStore = window.localStorage;
+let NombrePostres = document.getElementById("NombrePostres");
+let ImagenPostre = document.getElementById("ImagenPostre");
+let NombreRefresco = document.getElementById("NombreRefresco");
+let ImagenRefresco = document.getElementById("ImagenRefresco");
+let NombrePizza = document.getElementById("NombrePizza");
+let ImagenPizza = document.getElementById("ImagenPizza");
+
+const FuncionEnviar = (categoria, Nombre, imagen, index) => {
+  let insert = "";
+  if (categoria == "pizza") {
+    if (parseInt(index) == 1) {
+      insert = {
+        categoria: "pizza",
+        nombre: Nombre,
+        Imagen: imagen,
+        precio: 20000,
+      };
+      datosLocalStore.setItem(
+        Math.round(Math.random(1, 100) * 1000),
+        JSON.stringify(insert)
+      );
+    }
+    if (parseInt(index) == 2) {
+      insert = {
+        categoria: "pizza",
+        nombre: Nombre,
+        Imagen: imagen,
+        precio: 40000,
+      };
+      datosLocalStore.setItem(
+        Math.round(Math.random(1, 100) * 1000),
+        JSON.stringify(insert)
+      );
+    }
+    if (parseInt(index) == 3) {
+      insert = {
+        categoria: "pizza",
+        nombre: Nombre,
+        Imagen: imagen,
+        precio: 50000,
+      };
+      datosLocalStore.setItem(
+        Math.round(Math.random(1, 100) * 1000),
+        JSON.stringify(insert)
+      );
+    }
+    if (parseInt(index) == 4) {
+      insert = {
+        categoria: "pizza",
+        nombre: Nombre,
+        Imagen: imagen,
+        precio: 70000,
+      };
+      datosLocalStore.setItem(
+        Math.round(Math.random(1, 100) * 1000),
+        JSON.stringify(insert)
+      );
+    }
+  }
+};
