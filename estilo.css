@@ -214,3 +214,36 @@
   font-style: normal;
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.imagenGoldo {
+  display: flex;
+  justify-content: center;
+}
+.imagenGoldo img {
+  border: solid 2px black;
+}
+.colImagen {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+
+  flex-direction: column;
+}
+.textoGoldo {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+.textoGoldo p {
+  color: #006491;
+  font-weight: bold;
+}
+.tituloGoldo {
+  display: flex;
+  justify-content: center;
+}
+.tituloGoldo h1 {
+  color: #006491;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+}

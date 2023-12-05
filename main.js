@@ -393,6 +393,9 @@ let NombrePizza = document.getElementById("NombrePizza");
 let ImagenPizza = document.getElementById("ImagenPizza");
 
 let datosLocalStore = window.localStorage;
+//mostrar si tiene item en el local
+let totalMostrar = Object.keys(datosLocalStore);
+totalItem.innerHTML = `<p>${totalMostrar.length}</p>`;
 const FuncionEnviar = (categoria, Nombre, imagen, index) => {
   let insert = "";
   if (categoria == "pizza") {

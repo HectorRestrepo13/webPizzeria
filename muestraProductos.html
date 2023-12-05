@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./estilo.css" />
+  </head>
+  <body>
+    <div id="contenedorPrincipal" class="container-fluid">
+      <div class="row headee">
+        <div class="col-8 headeCol">
+          <div class="acomodarIzquierda">
+            <div class="logoPizza">
+              <img
+                src="./imagenes/Domino's_pizza_logo.svg.png"
+                alt="logo"
+                srcset="./imagenes/Domino's_pizza_logo.svg.png"
+              />
+            </div>
+            <div class="barraOpciones">
+              <a href="#"><button>Pide en linea</button></a>
+              <a href="#"><button>Menu</button></a>
+              <a href="#"><button>Tiendas</button></a>
+              <a href="#"><button>sigue tus pedidos</button></a>
+              <a href="#"><button>Promos</button></a>
+            </div>
+          </div>
+
+          <div class="acomodarDerecha">
+            <div class="btnIniciarSecion">
+              <img
+                src="./imagenes/iniciarSesion.png"
+                alt="InicarSesion"
+                srcset="./imagenes/iniciarSesion.png"
+              />
+              <button>Iniciar Sesion</button>
+            </div>
+            <div class="logoCarrito">
+              <img
+                src="./imagenes/logoCarrito.png"
+                alt="logoCarrito"
+                srcset="./imagenes/logoCarrito.png"
+              />
+            </div>
+            <div id="totalItem" class="numero"><p>0</p></div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 headerSecundario">
+          <div class="barraOpciones2">
+            <a href="index.html"> <button id="verTodo">Ver todo</button></a>
+            <a href="index.html"><button id="soloPizza">Pizza</button></a>
+            <a href="index.html"
+              ><button id="soloRefrescos">Refrescos</button></a
+            >
+            <a href="index.html"> <button id="soloPostres">Postres</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./muestraProducto.js"></script>
+  </body>
+</html>
